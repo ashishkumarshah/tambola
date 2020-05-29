@@ -10,4 +10,4 @@ Known Issues
 1. The build fails in travis with a PersistenceUnitLoadingException, need to fix that. So unfortunately no build passing badge and no code coverage badge until then :( Please reach out, if you can fix it.
 
 Next Steps
-1. I am looking to build a REST wrapper for the code. Contributions are welcome.
+1. I am looking to build REST API for this project. Contributions are welcome.
