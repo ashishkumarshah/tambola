@@ -9,7 +9,29 @@
 plugins {
     id 'java-library'
     id 'eclipse'
+    id 'jacoco'
 }
+
+jacoco {
+    toolVersion = "0.8.5"
+    reportsDir = file("$buildDir/customJacocoReportDir")
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        csv.enabled false
+        html.destination file("${buildDir}/jacocoHtml")
+    }
+}
+
+task generateJavaDoc(type: Javadoc) {
+  source = sourceSets.main.allJava
+}
+
+jacocoTestReport.dependsOn test
+check.dependsOn jacocoTestReport
+
 
 repositories {
     jcenter()
