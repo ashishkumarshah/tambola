@@ -1,4 +1,4 @@
-# tambola
+# Tambola
 
 Getting Started
 
