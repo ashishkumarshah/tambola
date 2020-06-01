@@ -1,4 +1,6 @@
 # Tambola
+Intorduction
+This project is an implementation of the popular party board game tambole/lotto/housie.
 
 Getting Started
 
